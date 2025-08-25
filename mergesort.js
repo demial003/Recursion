@@ -13,11 +13,10 @@ const merge = (left, right) => {
     }
   }
 
-  if (i < j) {
-    res = res.concat(left.slice(i, left.length));
-  } else {
-    res = res.concat(right.slice(j, right.length));
-  }
+  res = res.concat(left.slice(i, left.length));
+
+  res = res.concat(right.slice(j, right.length));
+
   return res;
 };
 
