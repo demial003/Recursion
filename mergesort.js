@@ -3,7 +3,7 @@ const merge = (left, right) => {
   let j = 0;
   let res = [];
 
-  while (i < left.length1 || j < right.length) {
+  while (i < left.length && j < right.length) {
     if (left[i] < right[j]) {
       res.push(left[i]);
       i++;
